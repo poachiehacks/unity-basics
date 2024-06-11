@@ -29,15 +29,22 @@ public class PlayerMovement : MonoBehaviour
         // transform.Rotate(Vector3.up * horizontalInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
         
         
-        // // read values from keyboard
-        // horizontalInput = Input.GetAxis("Horizontal");
-        // verticalInput   = Input.GetAxis("Vertical");
+        // read values from keyboard
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput   = Input.GetAxis("Vertical");
 
-        // // strafing
-        // transform.Translate(moveSpeed * Vector3.forward * Time.deltaTime * verticalInput);
-        // transform.Translate(moveSpeed * Vector3.right   * Time.deltaTime * horizontalInput);
+        // float horizontalInput = Input.GetAxis("Horizontal");
+        // float verticalInput  = Input.GetAxis("Vertical");
+        float rhorizInput = Input.GetAxis("RHorizontal");
+        float rvertInput  = Input.GetAxis("RVertical");
+
+
+        // strafing
+        transform.Translate(moveSpeed * Vector3.forward * Time.deltaTime * verticalInput);
+        transform.Translate(moveSpeed * Vector3.right   * Time.deltaTime * horizontalInput);
 
         // turning
-        // transform.Rotate(Vector3.up * horizontalInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
+        transform.Rotate(Vector3.up * rhorizInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
+        transform.Rotate(Vector3.right * rvertInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
     }
 }
