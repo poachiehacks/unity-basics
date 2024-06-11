@@ -14,6 +14,10 @@ Things I've learned to do:
 - add sinusoidal undulation in the vertical axis using `Mathf` and `Time.time`
 
 
+Things to do:
+- control player with a controller such as a DS4
+
+
 Resources consulted:
 
 tips for using git to version control Unity Projects
