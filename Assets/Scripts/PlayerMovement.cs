@@ -19,13 +19,25 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // read values from keyboard
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput   = Input.GetAxis("Vertical");
+        // // read values from keyboard
+        // horizontalInput = Input.GetAxis("Horizontal");
+        // verticalInput   = Input.GetAxis("Vertical");
 
-        // move the object
-        transform.Translate(moveSpeed * Vector3.forward * Time.deltaTime * verticalInput);
-        // transform.Translate(-Vector3.right * Time.deltaTime * horizontalInput);
-        transform.Rotate(Vector3.up * horizontalInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
+        // // move the object
+        // transform.Translate(moveSpeed * Vector3.forward * Time.deltaTime * verticalInput);
+        // // transform.Translate(-Vector3.right * Time.deltaTime * horizontalInput);
+        // transform.Rotate(Vector3.up * horizontalInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
+        
+        
+        // // read values from keyboard
+        // horizontalInput = Input.GetAxis("Horizontal");
+        // verticalInput   = Input.GetAxis("Vertical");
+
+        // // strafing
+        // transform.Translate(moveSpeed * Vector3.forward * Time.deltaTime * verticalInput);
+        // transform.Translate(moveSpeed * Vector3.right   * Time.deltaTime * horizontalInput);
+
+        // turning
+        // transform.Rotate(Vector3.up * horizontalInput * turnSpeed * Time.deltaTime);    // using Vector3.up means we rotate around that axis??
     }
 }

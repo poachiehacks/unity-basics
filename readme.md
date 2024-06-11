@@ -12,10 +12,11 @@ Things I've learned to do:
 - keep an object a set distance away from another object as the other object moves
 - keep the object at the same location relative to the other object as the other object moves
 - add sinusoidal undulation in the vertical axis using `Mathf` and `Time.time`
+- control player with a controller such as a DS4 using a set of Input Actions
 
 
 Things to do:
-- control player with a controller such as a DS4
+- understand the difference between Input Actions and Input.GetAxis
 
 
 Resources consulted:
